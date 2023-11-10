@@ -1,5 +1,12 @@
-let x = Math.floor(Math.random() * 6) + 1;
-let y = Math.floor(Math.random() * 6) + 1;
+let x;
+let y;
 
-console.log(x);
-console.log(y);
+document.getElementById("rollbtn").onclick = function(){
+
+    x = Math.floor(Math.random() * 6) + 1;
+    y = Math.floor(Math.random() * 6) + 1;
+
+    document.getElementById("xlbl").innerHTML = x;
+    document.getElementById("ylbl").innerHTML = x;
+
+}
